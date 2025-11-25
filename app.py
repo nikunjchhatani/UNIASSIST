@@ -477,7 +477,7 @@ with st.sidebar:
 
     st.markdown("""
         <div class="sidebar-section">
-            <div><b><b><b>❔ Quick Questions</b></b></b></div>
+            <div><b><b><b> Quick Questions</b></b></b></div>
     """, unsafe_allow_html=True)
 
     for question in example_questions:
@@ -591,14 +591,14 @@ with chat_container:
 <div class="chat-message bot-message">
     <strong>Assistant:</strong><br>
     {bot}
-    <div class="timestamp">{timestamp}</div>
+    <div class="timestamp" style="text-align:right;>{timestamp}</div>
 </div>
 """, unsafe_allow_html=True)
 
 
         # Play AI response button
-        play_key = f"play_{uuid.uuid4()}"
-        if st.button("🔊 Play Response", key=play_key):
+        #play_key = f"play_{uuid.uuid4()}"
+        if st.button("🔊 Play Response", key=f"play_{timestamp}"):
             text_to_speech(bot)
 
     st.markdown("</div></div>", unsafe_allow_html=True)
