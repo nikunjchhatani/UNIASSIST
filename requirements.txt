@@ -1,0 +1,15 @@
+streamlit
+google-generativeai
+python-dotenv
+pymongo
+pandas
+bcrypt
+dnspython
+user-agents
+plotly
+pytz
+pyttsx3
+edge_tts
+asyncio
+SpeechRecognition
+PyAudio
